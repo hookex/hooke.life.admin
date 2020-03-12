@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "admin": "yarn develop --watch-admin"
+    "admin": "yarn develop --watch-admin",
+    "start:prod": "pm2 start npm --name strapi -- run start"
   },
   "devDependencies": {},
   "dependencies": {
