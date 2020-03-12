@@ -108,6 +108,5 @@ coverage
 ############################
 
 exports
-# 云服务器，内存不够，无法编译
-#.cache
+.cache
 build

@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "connection": "default",
   "collectionName": "categories",
   "info": {
@@ -12,13 +11,11 @@
   "attributes": {
     "name": {
       "type": "string",
-      "unique": true,
       "required": true
     },
-    "restaurants": {
-      "collection": "restaurant",
-      "via": "categories",
-      "dominant": true
+    "articles": {
+      "via": "category",
+      "collection": "article"
     }
   }
 }
