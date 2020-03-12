@@ -2,18 +2,17 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-mongoose",
+      "connector": "mongoose",
       "settings": {
         "client": "mongo",
         "host": "localhost",
         "port": 27017,
         "database": "hookeBlog",
-        "username": "hooke",
+        "username": "",
         "password": ""
       },
       "options": {
         "authenticationDatabase": "",
-        "ssl": true,
         "minimize": true
       }
     }
