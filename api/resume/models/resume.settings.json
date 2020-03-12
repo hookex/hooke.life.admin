@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "resumes",
+  "info": {
+    "name": "resume"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "blog": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "forJob": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "glory": {
+      "type": "richtext"
+    },
+    "education": {
+      "type": "richtext"
+    },
+    "workExperience": {
+      "type": "richtext"
+    },
+    "experienceYears": {
+      "type": "string"
+    },
+    "techStack": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
