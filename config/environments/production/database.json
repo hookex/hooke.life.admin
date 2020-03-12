@@ -2,16 +2,20 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "bookshelf",
+      "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "sqlite",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "client": "mongo",
+        "host": "localhost",
+        "port": 27017,
+        "database": "hookeBlog",
+        "username": "hooke",
+        "password": ""
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": "",
+        "ssl": true,
+        "minimize": true
+      }
     }
   }
 }

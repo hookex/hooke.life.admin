@@ -2,19 +2,13 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-mongoose",
+      "connector": "bookshelf",
       "settings": {
-        "client": "mongo",
-        "host": "118.24.23.94",
-        "port": 27017,
-        "database": "hookeBlog",
-        "username": "hooke",
-        "password": ""
+        "client": "sqlite",
+        "filename": ".tmp/data.db"
       },
       "options": {
-        "authenticationDatabase": "",
-        "ssl": true,
-        "minimize": true
+        "useNullAsDefault": true
       }
     }
   }
