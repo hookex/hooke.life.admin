@@ -532,6 +532,7 @@
               "required": [
                 "id",
                 "title",
+                "content",
                 "image",
                 "published_at"
               ],

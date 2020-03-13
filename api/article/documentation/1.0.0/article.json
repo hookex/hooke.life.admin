@@ -518,6 +518,7 @@
         "required": [
           "id",
           "title",
+          "content",
           "image",
           "published_at"
         ],
@@ -605,6 +606,7 @@
       "NewArticle": {
         "required": [
           "title",
+          "content",
           "published_at"
         ],
         "properties": {
