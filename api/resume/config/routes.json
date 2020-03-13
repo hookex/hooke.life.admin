@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/categories",
+      "path": "/resumes",
       "handler": "resume.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/categories/count",
+      "path": "/resumes/count",
       "handler": "resume.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/categories/:id",
+      "path": "/resumes/:id",
       "handler": "resume.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/categories",
+      "path": "/resumes",
       "handler": "resume.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/categories/:id",
+      "path": "/resumes/:id",
       "handler": "resume.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/categories/:id",
+      "path": "/resumes/:id",
       "handler": "resume.delete",
       "config": {
         "policies": []
